@@ -1,0 +1,86 @@
+@media only screen and (max-width: 1000px) {
+  body {
+    flex-direction: column-reverse;
+  }
+
+  #body-login {
+    flex-flow: column;
+  }
+
+  #logo-signup-login {
+    height: 80px;
+  }
+
+  .main-signup,
+  .main-login {
+    width: 80vw;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+  }
+
+  .home-screen {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    color: #fff;
+    gap: 10vw;
+  }
+
+  aside {
+    order: -1;
+    position: inherit;
+    margin: 5vw;
+  }
+
+  .menu {
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-around;
+    bottom: 0;
+    background-color: #14161d;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 0;
+    max-height: 25px;
+  }
+
+  .home-content {
+    margin: 0 5vw 0 5vw;
+  }
+
+  aside {
+    justify-content: space-between;
+  }
+
+  .list-user-recomendation {
+    flex-flow: row;
+    justify-content: space-around;
+    height: 100px;
+  }
+
+  .user-recomendation {
+    flex-flow: column;
+  }
+
+  .profile-button-recomendations {
+    flex-flow: column;
+    height: 100%;
+    gap: 10px;
+  }
+
+  .profile-button-recomendations img {
+    display: block;
+    width: 80px;
+    height: auto;
+  }
+
+  .add-user-button {
+    display: none;
+  }
+
+  .post-button img {
+    height: 25px;
+  }
+}

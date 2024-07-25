@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/mobile.css" />
+    <title>TTwitter</title>
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/svg" />
+    <!--Para a fonte Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!---->
+  </head>
+  <body class="body-home">
+    <nav>
+      <a href="login.html"><img src="../images/logo.svg" alt="logo" /></a>
+      <input type="search" placeholder="Buscar" class="search-bar" />
+      <button type="button">
+        <img src="../images/search-icon.svg" alt="" />
+      </button>
+    </nav>
+    <div class="home-screen">
+      <div class="menu">
+        <img src="../images/home-icon.svg" alt="home-icon" />
+        <img src="../images/notification-icon.svg" alt="notification-icon" />
+        <img src="../images/menssages-icon.svg" alt="messages-icon" />
+        <img
+          src="../images/configurantions-icon.svg"
+          alt="configurantions-icon"
+        />
+      </div>
+      <main class="home-content">
+        <div class="make-post">
+          <textarea
+            class="input-make-post"
+            placeholder="No que está pensando...?"
+            id="timeline-text-area"
+          ></textarea>
+          <div class="list-make-post-buttons">
+            <div class="list-make-post-insert-buttons">
+              <div class="attach-image-container">
+                <label for="attach-image" id="attch-image-label">
+                  <img src="../images/image-icon.svg" alt="image-icon" />
+                </label>
+                <input
+                  id="attach-image"
+                  type="file"
+                  accept="image/gif, image/jpg, image/png, image/jpeg"
+                  class="make-post-button"
+                />
+              </div>
+              <button type="button" class="make-post-button">
+                <img src="../images/emoji-icon.svg" alt="image-icon" />
+              </button>
+              <button type="button" class="make-post-button">
+                <img src="../images/link-icon.svg" alt="image-icon" />
+              </button>
+            </div>
+            <button type="button" id="send-post-button">Postar</button>
+          </div>
+        </div>
+        <div id="timeline">
+          <div class="post">
+            <img src="../images/post-example.png" alt="" class="post-image" />
+            <div class="post-functions">
+              <button class="profile-button">
+                <img
+                  src="../images/profile-picture.jpg"
+                  alt="user-profile"
+                  class="profile-picture"
+                />
+                <p>@usuario</p>
+              </button>
+              <div class="list-post-buttons">
+                <button class="post-button">
+                  <img src="../images/comment-icon.svg" alt="comment" />
+                </button>
+                <button class="post-button">
+                  <img src="../images/like-icon.svg" alt="like" />
+                </button>
+                <button class="post-button">
+                  <img src="../images/heart-icon.svg" alt="heart" />
+                </button>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+              sequi, ipsam impedit totam molestiae quos non vitae sit dolor
+              quas? Impedit non rerum error alias facilis aliquid deleniti nobis
+              eligendi.
+            </p>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <h3 id="h3-recomendations">Pessoas que você talvez conheça</h3>
+        <ul class="list-user-recomendation">
+          <li class="user-recomendation">
+            <button class="profile-button-recomendations">
+              <img
+                src="../images/profile-picture.jpg"
+                alt="profile-picture"
+                class="profile-picture"
+              />
+              <p>@usuario</p>
+            </button>
+            <button class="add-user-button">Adicionar</button>
+          </li>
+          <li class="user-recomendation">
+            <button class="profile-button-recomendations">
+              <img
+                src="../images/profile-picture.jpg"
+                alt="profile-picture"
+                class="profile-picture"
+              />
+              <p>@usuario</p>
+            </button>
+            <button class="add-user-button">Adicionar</button>
+          </li>
+          <li class="user-recomendation">
+            <button class="profile-button-recomendations">
+              <img
+                src="../images/profile-picture.jpg"
+                alt="profile-picture"
+                class="profile-picture"
+              />
+              <p>@usuario</p>
+            </button>
+            <button class="add-user-button">Adicionar</button>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <script src="../scripts/index.js"></script>
+  </body>
+</html>

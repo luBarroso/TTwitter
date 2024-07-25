@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <title>TTwitter</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/svg" />
+    <!--Para a fonte Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!---->
+  </head>
+  <body>
+    <main class="main-signup">
+      <h2>Cadastro</h2>
+      <section class="content-signup-login">
+        <form class="form-signup-login">
+          <label for="fname" class="label-signup-login">Nome</label>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            class="input-signup-login"
+            placeholder="nome de usuário"
+            required
+          />
+          <label for="femail" class="label-signup-login">Email</label>
+          <input
+            type="email"
+            name="femail"
+            id="femail"
+            class="input-signup-login"
+            placeholder="example@email.com"
+            required
+          />
+          <label for="fdate" class="label-signup-login"
+            >Data de nascimento</label
+          >
+          <input
+            type="date"
+            name="fdate"
+            id="fdate"
+            class="input-signup-login"
+            required
+          />
+          <label for="fpass" class="label-signup-login">Senha</label>
+          <input
+            type="password"
+            name="fpass"
+            id="fpass"
+            class="input-signup-login"
+            placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
+            required
+          />
+          <label for="fvpass" class="label-signup-login"
+            >Confirmar a senha</label
+          >
+          <input
+            type="password"
+            name="fvpass"
+            id="fvpass"
+            class="input-signup-login"
+            placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
+          />
+          <div class="terms-signup-login">
+            <input
+              type="checkbox"
+              name="fterms"
+              id="fterms"
+              class="input-signup-login"
+            />
+            <label for="fterms" id="lable-Terms" class="label-signup-login">
+              Li e concordo com os <a href="./pages/terms.html">Termos</a> e
+              <a href="./pages/useConditions">Condições de uso</a>.
+            </label>
+          </div>
+          <button type="submit" class="button-signup-login">Cadastrar</button>
+        </form>
+        <a href="./pages/login.html" class="link-redirection">Fazer Login</a>
+      </section>
+    </main>
+    <img src="./images/logo.svg" alt="logo" id="logo-signup-login" />
+  </body>
+</html>

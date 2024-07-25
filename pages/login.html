@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/mobile.css" />
+    <title>TTwitter</title>
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/svg" />
+    <!--Para a fonte Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!---->
+  </head>
+  <body id="body-login">
+    <img src="../images/logo.svg" alt="logo" id="logo-signup-login" />
+    <main class="main-login">
+      <h2>Bem vindo a plataforma TTwitter</h2>
+      <section class="content-signup-login">
+        <form class="form-signup-login">
+          <label for="femail" class="label-signup-login">Email</label>
+          <input
+            type="email"
+            name="femail"
+            id="femail"
+            class="input-signup-login"
+            placeholder="example@email.com"
+            required
+          />
+          <label for="fpass" class="label-signup-login">Senha</label>
+          <input
+            type="password"
+            name="fpass"
+            id="fpass"
+            class="input-signup-login"
+            placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
+            required
+          />
+          <a href="forgot-password.html" id="link-forgot-password"
+            >Esqueci minha senha</a
+          >
+          <button type="submit" class="button-signup-login" onclick="entrar()">
+            Entrar
+          </button>
+        </form>
+        <a href="../index.html" class="link-redirection">Registrar</a>
+        <div class="terms-signup-login">
+          <p>
+            Li e concordo com os <a href="terms.html">Termos</a> e
+            <a href="useConditions.html">Condições de uso</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script>
+      function entrar() {
+        window.location.replace("./home.html");
+      }
+    </script>
+  </body>
+</html>
